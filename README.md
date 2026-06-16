@@ -1,0 +1,1 @@
+# Tratamento-Imagens-ENEM2020-DIA1-REGULAR-CADERNOAZUL
