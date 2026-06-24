@@ -13,7 +13,7 @@ OBS4: execute o código, e abra as imagens para conferir se as bordas foram remo
 from PIL import Image
 import os
 
-pasta_imagens = "./pagina2"
+pasta_imagens = "imagens-convertidas"
 pasta_saida = "sem-bordas-externas"
 
 os.makedirs(pasta_saida, exist_ok=True)
@@ -25,7 +25,7 @@ for nome_arquivo in os.listdir(pasta_imagens):
 
         largura, altura = imagem.size
 
-        caixa_corte = (128, 314, largura - 131, altura - 749) # 120, 300, -120, -140 ATUALIZE AQUI OS VALORES DE CORTE (esquerda, superior, direita, inferior)
+        caixa_corte = (120, 300, largura - 120, altura - 140) #ATUALIZE AQUI OS VALORES DE CORTE (esquerda, superior, direita, inferior)
         imagem_cortada = imagem.crop(caixa_corte)
 
         caminho_saida = os.path.join(pasta_saida, nome_arquivo)
