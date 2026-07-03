@@ -13,7 +13,7 @@ OBS4: Seu objetivo é deixar apenas as questões. Por isso, exclua as páginas d
 from pdf2image import convert_from_path
 import os
 
-arquivo = "2020_AZUL_D1_CD1.pdf"
+arquivo = "2020_REG.pdf"
 pasta_saida = "imagens-convertidas"
 
 if not os.path.exists(pasta_saida):
